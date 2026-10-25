@@ -1,4 +1,4 @@
-# transitions.py — fades and crossfades for VNGEN
+# transitions.py — fades and crossfades for TailClip
 import pygame
 from typing import Optional, Tuple
 import math

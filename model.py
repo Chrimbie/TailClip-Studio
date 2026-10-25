@@ -6,8 +6,8 @@ from pathlib import Path
 import os, json
 import pygame
 from PySide6 import QtCore
-from vngen.config import TRACK_ORDER, DEFAULT_TRACK_DURATIONS, MIN_TRACK_DURATIONS
-from vngen.paths import normalize_asset_path, resolve_asset_path
+from tailclip.config import TRACK_ORDER, DEFAULT_TRACK_DURATIONS, MIN_TRACK_DURATIONS
+from tailclip.paths import normalize_asset_path, resolve_asset_path
 
 TICK_SEC = 0.0333333  # visual minimum footprint in seconds
 

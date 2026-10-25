@@ -11,14 +11,14 @@ from script_editor import ScriptEditorDock
 from tutorial import TutorialDialog
 from project_manager import ensure_project_structure
 from compiler import build_project
-from vngen.widget import GameWidget
-from vngen.config import SPRITE_DEFAULTS
+from tailclip.widget import GameWidget
+from tailclip.config import SPRITE_DEFAULTS
 
 
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("VNGen Studio(v3.1.1) [*]")
+        self.setWindowTitle("TailClip Studio(v3.1.1) [*]")
         self.resize(1920, 1080)
 
         self.model = TimelineModel()
@@ -252,7 +252,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def _show_tutorial(self):
         steps = [
             {
-                "title": "Welcome to VNGen Studio",
+                "title": "Welcome to TailClip Studio",
                 "body": "<p>Drag assets from the dock on the left into the timeline to start building your scene.</p>"
             },
             {
@@ -279,7 +279,7 @@ class MainWindow(QtWidgets.QMainWindow):
         dlg.exec()
 
     def _maybe_show_tutorial(self):
-        settings = QtCore.QSettings("VNGEN", "Studio")
+        settings = QtCore.QSettings("TailClip", "Studio")
         if not settings.value("tutorialShown", False, type=bool):
             self._show_tutorial()
             settings.setValue("tutorialShown", True)

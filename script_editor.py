@@ -6,7 +6,7 @@ from PySide6 import QtCore, QtGui, QtWidgets
 from model import TimelineModel
 
 DEFAULT_SCRIPT_TEMPLATE = (
-    "# VNGEN script\n"
+    "# TailClip script\n"
     "# ctx: {'model','widget','game','layers','keyframe','playhead'}\n\n"
     "def run(ctx):\n"
     "    # Add your custom logic here\n"

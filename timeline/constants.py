@@ -1,5 +1,5 @@
 from PySide6 import QtGui
-from vngen.config import TRACK_ORDER as _TRACK_ORDER, TRACK_COLORS_RGB
+from tailclip.config import TRACK_ORDER as _TRACK_ORDER, TRACK_COLORS_RGB
 
 VNMIME = "application/x-vn-asset"
 TRACK_ORDER = list(_TRACK_ORDER)

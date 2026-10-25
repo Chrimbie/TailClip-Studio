@@ -3,7 +3,7 @@ from __future__ import annotations
 import pygame
 from typing import List, Tuple, Optional
 from model import TimelineModel, Keyframe
-from vngen.config import SPRITE_DEFAULTS
+from tailclip.config import SPRITE_DEFAULTS
 
 
 class Layers:

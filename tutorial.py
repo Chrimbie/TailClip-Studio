@@ -6,7 +6,7 @@ from PySide6 import QtCore, QtWidgets
 class TutorialDialog(QtWidgets.QDialog):
     def __init__(self, steps: List[Dict[str, str]], parent=None):
         super().__init__(parent)
-        self.setWindowTitle("VNGen Interactive Tutorial")
+        self.setWindowTitle("TailClip Interactive Tutorial")
         self.setModal(True)
         self.resize(520, 360)
         self._steps = steps or [{"title": "Welcome", "body": "No tutorial steps defined."}]

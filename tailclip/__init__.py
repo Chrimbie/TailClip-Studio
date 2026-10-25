@@ -20,7 +20,7 @@ def __getattr__(name: str) -> Any:
     if name == "LogicAction":
         from .logic import LogicAction
         return LogicAction
-    raise AttributeError(f"module 'vngen' has no attribute {name!r}")
+    raise AttributeError(f"module 'tailclip' has no attribute {name!r}")
 
 
 def __dir__() -> list[str]:

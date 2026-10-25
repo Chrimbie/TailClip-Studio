@@ -50,7 +50,7 @@ def build_project(project_file: Path, platform: str, output: Path):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Compile VNGEN project into runnable package.")
+    parser = argparse.ArgumentParser(description="Compile TailClip project into runnable package.")
     parser.add_argument("project", type=Path, help="Path to project JSON file")
     parser.add_argument("--platform", choices=["windows", "mac", "linux"], default="windows")
     parser.add_argument("--output", type=Path, default=Path("build"), help="Output directory root")

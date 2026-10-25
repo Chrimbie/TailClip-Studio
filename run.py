@@ -14,7 +14,7 @@ def _create_splash() -> QtWidgets.QSplashScreen:
     painter.setPen(QtGui.QPen(QtGui.QColor("#8fd3ff")))
     font = QtGui.QFont("Segoe UI", 24, QtGui.QFont.Bold)
     painter.setFont(font)
-    painter.drawText(pixmap.rect(), QtCore.Qt.AlignCenter, "VNGen Studio")
+    painter.drawText(pixmap.rect(), QtCore.Qt.AlignCenter, "TailClip Studio")
     painter.end()
     splash = QtWidgets.QSplashScreen(pixmap)
     splash.setWindowFlag(QtCore.Qt.WindowStaysOnTopHint, True)
